@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="signupForm" action="process_signup.php" method="POST" onsubmit="return validateForm()">
+  <h2>Customer Signup</h2>
+
+  <input type="text" name="full_name" id="full_name" placeholder="Full Name" required>
+  <input type="email" name="email" id="email" placeholder="Email" required>
+  <input type="text" name="phone" id="phone" placeholder="Phone Number">
+  <input type="password" name="password" id="password" placeholder="Password" required>
+  <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+
+  <div id="error" class="error"></div>
+  <button type="submit">Sign Up</button>
+</form>
+
+<script src="validation.js"></script>
+</body>
+</html>
